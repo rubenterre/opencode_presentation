@@ -32,7 +32,9 @@ import SliderFooter from '../ui/SliderFooter.astro';
           <li><span class="icon icon-blue">3</span><span>Predice a <strong>seguinte palabra</strong> máis probable en cada contexto</span></li>
           <li><span class="icon icon-blue">4</span><span>O resultado: pode escribir, resumir, analizar e <strong>xerar código</strong></span></li>
         </ul>
+        <div class="card__img-container">
         <img class="card__img" src={chatGptImg.src} alt="Imaxe de ChatGPT">
+        </div>
       </div>
     </div>
     <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
@@ -66,9 +68,16 @@ import SliderFooter from '../ui/SliderFooter.astro';
 
 <style>
 
+    .card__img-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .card__img{
-        width: 500px;
-        margin-top: 1rem;
+      padding-top: 1.5rem;
+      max-width: 400px;
     }
 
     .provider-logo{

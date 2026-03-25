@@ -41,7 +41,7 @@
     height: 100%;
     display: none;
     flex-direction: column;
-    padding: 60px 80px;
+    padding: 60px 80px 90px 60px;
     background: var(--bg);
     overflow: hidden;
   }
