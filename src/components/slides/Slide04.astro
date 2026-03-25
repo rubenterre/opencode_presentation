@@ -1,5 +1,7 @@
 ---
 import SliderFooter from "../ui/SliderFooter.astro"
+import ollama from "../../assets/slider04/hello.png"
+import { Image } from "astro:assets"
 ---
 <!-- SLIDE 4: REQUISITOS -->
 <div class="slide" id="slide-4">
@@ -39,14 +41,54 @@ import SliderFooter from "../ui/SliderFooter.astro"
           <li><span class="icon icon-purple">✦</span><span><strong>Anthropic Claude</strong> – Alta calidade, ideal para código complexo</span></li>
           <li><span class="icon icon-purple">✦</span><span><strong>OpenAI GPT-4</strong> – Familiar se usaches ChatGPT</span></li>
           <li><span class="icon icon-purple">✦</span><span><strong>Google Gemini</strong> – Boa opción multimodal</span></li>
+          <li><span class="icon icon-purple">✦</span><span><strong>OpenRouter</strong> – Boa opción multimodal con moitos modelos gratis</span></li>
           <li><span class="icon icon-purple">✦</span><span><strong>Ollama (local)</strong> – GRATUÍTO, sen enviar código á nube</span></li>
         </ul>
+        <div class="highlight-box green ollama__card">
+        🔗 <strong><a class="ollama__a" href="https://ollama.com">Ver más sobre Ollama</a></strong>
       </div>
-      <div class="highlight-box purple">
+      </div>
+      <div class="highlight-box purple ollama">
+           <div class="ollama__container">
+            <img class="ollama__img" src={ollama.src} alt="Mascota de Ollama">
+           </div>
+           <div class="ollama__p">
         💡 <strong>Consello:</strong> Se queres probar sen gastar diñeiro, usa <strong>Ollama</strong> con un modelo local como Qwen ou Llama. OpenCode é compatible con calquera modelo que expoña unha API compatible con OpenAI.
+           </div>
       </div>
     </div>
   </div>
 
   <SliderFooter number="03" title="Requisitos"/>
 </div>
+
+<style>
+
+.ollama{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.ollama__container{
+    width: 60px;
+    height: 60px;
+    background: var(--text);
+    border-radius: 12px;
+}
+
+.ollama__img{
+    width: 60px;
+}
+
+.ollama__card{
+    margin-top: 10px;
+}
+
+.ollama__a{
+    color: var(--text);
+    font-weight: 400;
+}
+
+</style>

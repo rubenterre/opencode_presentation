@@ -3,11 +3,19 @@ import SliderFooter from "../ui/SliderFooter.astro"
 ---
 <!-- SLIDE 8: MODOS DE TRABALLO -->
 <div class="slide" id="slide-8">
-  <div class="slide-header">
+  <div class="slide-header slider-header--modos">
     <div class="slide-label">07 · Modos de traballo</div>
     <div class="slide-title">Modo <span class="purple">Plan</span> vs Modo <span class="green">Build</span></div>
     <div class="divider purple"></div>
   </div>
+    <div class="recomendado">
+      <div class="highlight-box">
+        💡 <strong>Fluxo recomendado:</strong> Comeza sempre con <strong>Modo Plan</strong> para funcionalidades complexas → analiza o plan proposto → cambia a <strong>Modo Build</strong> para implementar. Se o resultado non é o esperado, usa <span class="kbd">/undo</span> para desfacer.
+      </div>
+      <div class="highlight-box">
+        💡 <strong>Consello:</strong> Traballa sempre nun <strong>repositorio en git e vai facendo commits</strong> cada poucos cambios para ter sempre unha copia segura do proxecto.
+      </div>
+    </div>
   <div class="slide-body">
     <div class="two-col" style="flex:1;">
       <div class="mode-card plan">
@@ -41,12 +49,23 @@ import SliderFooter from "../ui/SliderFooter.astro"
         </div>
       </div>
     </div>
-    <div style="margin-top:20px;">
-      <div class="highlight-box">
-        💡 <strong>Fluxo recomendado:</strong> Comeza sempre con <strong>Modo Plan</strong> para funcionalidades complexas → analiza o plan proposto → cambia a <strong>Modo Build</strong> para implementar. Se o resultado non é o esperado, usa <span class="kbd">/undo</span> para desfacer.
-      </div>
-    </div>
+
   </div>
 
     <SliderFooter number="07" title="Modos de traballo"/>
 </div>
+
+<style>
+
+.slider-header--modos{
+    margin-bottom: 15px;
+}
+
+.recomendado{
+    margin: .7rem 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+</style>
