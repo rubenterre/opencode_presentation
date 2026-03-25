@@ -1,0 +1,52 @@
+---
+import SliderFooter from "../ui/SliderFooter.astro"
+---
+<!-- SLIDE 8: MODOS DE TRABALLO -->
+<div class="slide" id="slide-8">
+  <div class="slide-header">
+    <div class="slide-label">07 · Modos de traballo</div>
+    <div class="slide-title">Modo <span class="purple">Plan</span> vs Modo <span class="green">Build</span></div>
+    <div class="divider purple"></div>
+  </div>
+  <div class="slide-body">
+    <div class="two-col" style="flex:1;">
+      <div class="mode-card plan">
+        <div class="mode-icon">🧠</div>
+        <div class="mode-name" style="color:var(--accent4);">Modo Plan</div>
+        <div class="mode-desc">Modo de <strong>só lectura</strong>. O axente analiza o código e propón estratexias pero <strong>non realiza cambios</strong>.</div>
+        <ul class="feature-list" style="margin-top:8px;">
+          <li><span class="icon icon-purple">✓</span><span>Analiza e explora o proxecto</span></li>
+          <li><span class="icon icon-purple">✓</span><span>Suxire estratexias de implementación</span></li>
+          <li><span class="icon icon-purple">✓</span><span>Ideal para entender antes de modificar</span></li>
+          <li><span class="icon icon-purple">✓</span><span>Pide confirmación antes de executar</span></li>
+          <li><span class="icon icon-purple">✓</span><span>Perfecto para auditar repositorios</span></li>
+        </ul>
+        <div style="margin-top:auto; padding-top:16px;">
+          <span class="tag tag-purple">Activar: <span class="kbd" style="font-size:11px;">Tab</span></span>
+        </div>
+      </div>
+      <div class="mode-card build">
+        <div class="mode-icon">🔨</div>
+        <div class="mode-name" style="color:var(--accent2);">Modo Build</div>
+        <div class="mode-desc">Modo de <strong>acceso total</strong>. O axente pode ler, escribir e modificar ficheiros e executar comandos.</div>
+        <ul class="feature-list" style="margin-top:8px;">
+          <li><span class="icon icon-green">✓</span><span>Edita ficheiros directamente</span></li>
+          <li><span class="icon icon-green">✓</span><span>Executa comandos de shell</span></li>
+          <li><span class="icon icon-green">✓</span><span>Implementa funcionalidades completas</span></li>
+          <li><span class="icon icon-green">✓</span><span>Corrixe bugs automaticamente</span></li>
+          <li><span class="icon icon-green">✓</span><span>Modo predeterminado ao iniciar</span></li>
+        </ul>
+        <div style="margin-top:auto; padding-top:16px;">
+          <span class="tag tag-green">Activar: <span class="kbd" style="font-size:11px;">Tab</span></span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:20px;">
+      <div class="highlight-box">
+        💡 <strong>Fluxo recomendado:</strong> Comeza sempre con <strong>Modo Plan</strong> para funcionalidades complexas → analiza o plan proposto → cambia a <strong>Modo Build</strong> para implementar. Se o resultado non é o esperado, usa <span class="kbd">/undo</span> para desfacer.
+      </div>
+    </div>
+  </div>
+
+    <SliderFooter number="07" title="Modos de traballo"/>
+</div>

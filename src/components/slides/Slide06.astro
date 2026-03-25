@@ -1,0 +1,70 @@
+---
+import SliderFooter from "../ui/SliderFooter.astro"
+---
+<!-- SLIDE 6: CONFIGURACIÓN -->
+<div class="slide" id="slide-6">
+  <div class="slide-header">
+    <div class="slide-label">05 · Configuración</div>
+    <div class="slide-title">Configuración <span class="purple">inicial</span></div>
+    <div class="divider purple"></div>
+  </div>
+  <div class="slide-body">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-title">Conectar o provedor de IA</div>
+            <div class="step-desc">Executa <code style="color:var(--accent2)">/connect</code> dentro da TUI de OpenCode, selecciona o teu provedor e introduce a clave API</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-title">Configurar variables de entorno (alternativa)</div>
+            <div class="step-desc">Podes configurar as claves directamente como variables de entorno no teu shell</div>
+          </div>
+        </div>
+        <div class="code-block">
+          <span class="comment"># Engadir ao ~/.bashrc ou ~/.zshrc</span><br>
+          <span class="keyword">export</span> <span class="string">ANTHROPIC_API_KEY</span>=<span class="flag">"a-túa-clave"</span><br>
+          <span class="keyword">export</span> <span class="string">OPENAI_API_KEY</span>=<span class="flag">"a-túa-clave"</span>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-title">Inicializar o proxecto</div>
+            <div class="step-desc">Navega ao teu proxecto e executa <code style="color:var(--accent2)">opencode</code>, despois usa o comando <code style="color:var(--accent4)">/init</code> para crear o ficheiro AGENTS.md</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <div class="card">
+        <div class="card-title green">📄 Ficheiro AGENTS.md</div>
+        <div class="code-block" style="font-size:12px;">
+          <div class="code-header">
+            <div class="code-dot dot-red"></div>
+            <div class="code-dot dot-yellow"></div>
+            <div class="code-dot dot-green"></div>
+            <span class="code-filename">AGENTS.md</span>
+          </div>
+          <span class="keyword"># O Meu Proxecto Web</span><br><br>
+          <span class="keyword">## Stack Tecnolóxico</span><br>
+          <span class="comment">- Astro 5 con TypeScript</span><br>
+          <span class="comment">- Tailwind CSS</span><br>
+          <span class="comment">- Node.js backend</span><br><br>
+          <span class="keyword">## Convencións</span><br>
+          <span class="comment">- Usar compoñentes funcionais</span><br>
+          <span class="comment">- Seguir convencións REST</span><br>
+          <span class="comment">- Escribir tests para funcións novas</span>
+        </div>
+      </div>
+      <div class="highlight-box green">
+        📌 O ficheiro <strong>AGENTS.md</strong> axuda a OpenCode a entender a estrutura, o stack e as convencións do teu proxecto. ¡É fundamental para obter mellores respostas!
+      </div>
+    </div>
+  </div>
+
+    <SliderFooter number="05" title="Configuración inicial"/>
+</div>

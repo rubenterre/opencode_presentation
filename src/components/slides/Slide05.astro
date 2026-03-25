@@ -1,0 +1,81 @@
+---
+import SliderFooter from "../ui/SliderFooter.astro"
+---
+
+
+<!-- SLIDE 5: INSTALACIÓN -->
+<div class="slide" id="slide-5">
+  <div class="slide-header">
+    <div class="slide-label">04 · Posta en marcha</div>
+    <div class="slide-title"><span class="accent">Instalación</span> de OpenCode</div>
+    <div class="divider"></div>
+  </div>
+  <div class="slide-body">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <div class="card">
+        <div class="card-title green">⚡ Método 1 · Script rápido (recomendado)</div>
+        <div class="code-block">
+          <div class="code-header">
+            <div class="code-dot dot-red"></div>
+            <div class="code-dot dot-yellow"></div>
+            <div class="code-dot dot-green"></div>
+            <span class="code-filename">bash / zsh</span>
+          </div>
+          <span class="comment"># Instalar con un só comando</span><br>
+          <span class="prompt">$ </span><span class="command">curl</span> <span class="flag">-fsSL</span> <span class="string">https://opencode.ai/install</span> <span class="keyword">|</span> <span class="command">bash</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title blue">📦 Método 2 · Node.js / npm</div>
+        <div class="code-block">
+          <div class="code-header">
+            <div class="code-dot dot-red"></div>
+            <div class="code-dot dot-yellow"></div>
+            <div class="code-dot dot-green"></div>
+            <span class="code-filename">npm · bun · pnpm</span>
+          </div>
+          <span class="comment"># Con npm</span><br>
+          <span class="prompt">$ </span><span class="command">npm</span> i <span class="flag">-g</span> <span class="string">opencode-ai@latest</span><br><br>
+          <span class="comment"># Con bun (máis rápido)</span><br>
+          <span class="prompt">$ </span><span class="command">bun</span> add <span class="flag">-g</span> <span class="string">opencode-ai</span><br><br>
+          <span class="comment"># Con pnpm</span><br>
+          <span class="prompt">$ </span><span class="command">pnpm</span> add <span class="flag">-g</span> <span class="string">opencode-ai</span>
+        </div>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <div class="card">
+        <div class="card-title orange">🍺 Método 3 · Homebrew (macOS/Linux)</div>
+        <div class="code-block">
+          <div class="code-header">
+            <div class="code-dot dot-red"></div>
+            <div class="code-dot dot-yellow"></div>
+            <div class="code-dot dot-green"></div>
+            <span class="code-filename">macOS / Linux</span>
+          </div>
+          <span class="prompt">$ </span><span class="command">brew</span> install <span class="string">opencode</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title purple">🪟 Windows · Chocolatey / Scoop</div>
+        <div class="code-block">
+          <div class="code-header">
+            <div class="code-dot dot-red"></div>
+            <div class="code-dot dot-yellow"></div>
+            <div class="code-dot dot-green"></div>
+            <span class="code-filename">PowerShell</span>
+          </div>
+          <span class="comment"># Chocolatey</span><br>
+          <span class="prompt">$ </span><span class="command">choco</span> install <span class="string">opencode</span><br><br>
+          <span class="comment"># Scoop</span><br>
+          <span class="prompt">$ </span><span class="command">scoop</span> install <span class="string">opencode</span>
+        </div>
+      </div>
+      <div class="highlight-box">
+        💡 <strong>Verificar instalación:</strong> Executa <code style="color:var(--accent2)">opencode --version</code> para confirmar que se instalou correctamente.
+      </div>
+    </div>
+  </div>
+  
+  <SliderFooter number="04" title="Instalación"/>
+</div>

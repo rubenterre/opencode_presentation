@@ -1,0 +1,52 @@
+---
+import SliderFooter from "../ui/SliderFooter.astro"
+---
+<!-- SLIDE 4: REQUISITOS -->
+<div class="slide" id="slide-4">
+  <div class="slide-header">
+    <div class="slide-label">03 · Preparación</div>
+    <div class="slide-title">Que <span class="orange">necesitamos</span>?</div>
+    <div class="divider orange"></div>
+  </div>
+  <div class="slide-body">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <div class="card">
+        <div class="card-title orange">🖥️ Terminal moderno (recomendado)</div>
+        <ul class="feature-list">
+          <li><span class="icon icon-orange">▸</span><span><strong>GitBash</strong> – Multiplataforma (Windows, macOS, Linux)</span></li>
+          <li><span class="icon icon-orange">▸</span><span><strong>Warp</strong> – Multiplataforma (Windows, macOS, Linux)</span></li>
+          <li><span class="icon icon-orange">▸</span><span><strong>WezTerm</strong> – Multiplataforma (Windows, macOS, Linux)</span></li>
+          <li><span class="icon icon-orange">▸</span><span><strong>Alacritty</strong> – Multiplataforma, moi rápido</span></li>
+          <li><span class="icon icon-orange">▸</span><span><strong>Ghostty</strong> – Linux e macOS</span></li>
+          <li><span class="icon icon-orange">▸</span><span><strong>Kitty</strong> – Linux e macOS</span></li>
+          <li><span class="icon icon-orange">▸</span><span>Tamén funciona no terminal de VS Code ou iTerm2</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title blue">📦 Software necesario</div>
+        <ul class="feature-list">
+          <li><span class="icon icon-blue">JS</span><span><strong>Node.js</strong> 18+ ou Bun (para instalación vía npm)</span></li>
+          <li><span class="icon icon-blue">🍺</span><span><strong>Homebrew</strong> (macOS/Linux) – opcional</span></li>
+          <li><span class="icon icon-blue">🪟</span><span><strong>Chocolatey ou Scoop</strong> (Windows) – opcional</span></li>
+        </ul>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <div class="card">
+        <div class="card-title purple">🔑 Clave API dun provedor de IA</div>
+        <ul class="feature-list">
+          <li><span class="icon icon-purple">✦</span><span><strong>OpenCode Zen</strong> – Recomendado para principiantes, modelos curados polo equipo de OpenCode</span></li>
+          <li><span class="icon icon-purple">✦</span><span><strong>Anthropic Claude</strong> – Alta calidade, ideal para código complexo</span></li>
+          <li><span class="icon icon-purple">✦</span><span><strong>OpenAI GPT-4</strong> – Familiar se usaches ChatGPT</span></li>
+          <li><span class="icon icon-purple">✦</span><span><strong>Google Gemini</strong> – Boa opción multimodal</span></li>
+          <li><span class="icon icon-purple">✦</span><span><strong>Ollama (local)</strong> – GRATUÍTO, sen enviar código á nube</span></li>
+        </ul>
+      </div>
+      <div class="highlight-box purple">
+        💡 <strong>Consello:</strong> Se queres probar sen gastar diñeiro, usa <strong>Ollama</strong> con un modelo local como Qwen ou Llama. OpenCode é compatible con calquera modelo que expoña unha API compatible con OpenAI.
+      </div>
+    </div>
+  </div>
+
+  <SliderFooter number="03" title="Requisitos"/>
+</div>

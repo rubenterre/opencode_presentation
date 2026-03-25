@@ -1,26 +1,41 @@
 <!doctype html>
 <html lang="gl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>OpenCode para desenvolvemento web</title>
-	</head>
-	<body>
-		<slot />
-		<script>
-			import "../lib/script.js"
-		</script>
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>OpenCode para desenvolvemento web</title>
+  </head>
+  <body>
+    <div class="progress" id="progress"></div>
+    <div class="slide-num" id="slideNum">01 / 10</div>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <div class="slideshow" id="slideshow">
+      <slot />
+	</div><!-- end slideshow -->
+
+      <!-- Navigation -->
+      <div class="nav">
+        <button id="btnPrev" onclick="changeSlide(-1)" disabled>← Anterior</button>
+        <span class="nav-counter" id="navCounter">01 / 10</span>
+        <button id="btnNext" onclick="changeSlide(1)">Seguinte →</button>
+      </div>
+    </div>
+	<script>
+		import "../lib/script.js"
+	</script>
+  </body>
+
+  <style is:global>
+    @import url(../styles/global.css);
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</html>

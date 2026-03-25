@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../../assets/LOGO_RT.png'
+---
+
+<!-- SLIDE 1: PORTADA -->
+<div class="slide slide-cover active" id="slide-1">
+  <div class="bg-grid"></div>
+  <div class="cover-badge">🎓 Desenvolvemento Web · 2026</div>
+  <div class="cover-title">
+    <span class="highlight">Open</span>Code
+  </div>
+  <div class="cover-subtitle">
+    O axente de codificación con IA para o teu terminal
+  </div>
+  <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-bottom:40px;">
+    <span class="tag tag-blue">🤖 IA Xerativa</span>
+    <span class="tag tag-green">⌨️ Terminal-first</span>
+    <span class="tag tag-purple">🔓 Código Aberto</span>
+    <span class="tag tag-orange">🔗 Multi-provedor</span>
+  </div>
+  <div class="cover-meta">
+    <span>📋 9 seccións</span>
+    <span>⚡ Práctico e aplicado</span>
+  </div>
+  <div class="logo">
+    <img class="logo__img" src={logo.src} alt="Logo de Rubén Terré">
+    <a href="https://rubenterre.me" class="logo__a">Rubén Terré<a/>
+  </div>
+</div>
+
+<style>
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo__img{
+    width: 40px;
+    margin: 1rem;
+  }
+
+  .logo__a{
+    color: var(--text-muted);
+    font-size: .8rem;
+  }
+</style>

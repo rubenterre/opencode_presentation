@@ -1,0 +1,87 @@
+---
+import SliderFooter from "../ui/SliderFooter.astro"
+---
+<!-- SLIDE 9: MELLORES PRÁCTICAS -->
+<div class="slide" id="slide-9">
+  <div class="slide-header">
+    <div class="slide-label">08 · Boas prácticas</div>
+    <div class="slide-title">Mellores <span class="orange">prácticas</span></div>
+    <div class="divider orange"></div>
+  </div>
+  <div class="slide-body">
+    <div style="flex:1; display:flex; flex-direction:column; gap:14px;">
+      <div class="card">
+        <div class="card-title orange">✍️ Como dar boas instrucións</div>
+        <ul class="feature-list">
+          <li>
+            <span class="icon icon-red">✗</span>
+            <span><span class="tag tag-red">Malo</span> &nbsp; <em>"Arranxa o bug"</em> → Demasiado vago</span>
+          </li>
+          <li>
+            <span class="icon icon-green">✓</span>
+            <span><span class="tag tag-green">Correcto</span> &nbsp; <em>"O formulario de login lanza 'undefined is not a function' ao facer click. O erro está en auth.ts liña 45"</em></span>
+          </li>
+          <li>
+            <span class="icon icon-red">✗</span>
+            <span><span class="tag tag-red">Malo</span> &nbsp; <em>"Mellórao"</em> → Sen contexto nin obxectivo</span>
+          </li>
+          <li>
+            <span class="icon icon-green">✓</span>
+            <span><span class="tag tag-green">Correcto</span> &nbsp; <em>"Refactoriza handleSubmit para usar async/await e engade manexo de erros"</em></span>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title blue">🔄 Fluxo de traballo recomendado</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div class="step">
+            <div class="step-num green">1</div>
+            <div class="step-content">
+              <div class="step-title">Explorar</div>
+              <div class="step-desc">Usa o Modo Plan para entender o código antes de tocar nada</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num green">2</div>
+            <div class="step-content">
+              <div class="step-title">Planificar</div>
+              <div class="step-desc">Pide a OpenCode que cree un plan detallado e itera sobre el</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num green">3</div>
+            <div class="step-content">
+              <div class="step-title">Implementar</div>
+              <div class="step-desc">Cambia a Modo Build e executa os cambios acordados</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num green">4</div>
+            <div class="step-content">
+              <div class="step-title">Verificar</div>
+              <div class="step-desc">Comproba que todo funciona. Se fallou, usa /undo e reformula</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:14px;">
+      <div class="card">
+        <div class="card-title green">✅ Boas prácticas adicionais</div>
+        <ul class="feature-list">
+          <li><span class="icon icon-green">📄</span><span><strong>Crea sempre un AGENTS.md</strong> con o stack e convencións do proxecto</span></li>
+          <li><span class="icon icon-green">🖼️</span><span><strong>Usa imaxes</strong> – Arrastra maquetas ou capturas ao terminal para dar contexto visual</span></li>
+          <li><span class="icon icon-green">🔒</span><span><strong>Revisa os cambios</strong> antes de confirmalos, especialmente en modo Build</span></li>
+          <li><span class="icon icon-green">🔧</span><span><strong>Usa opencode.json</strong> por proxecto para configuracións específicas</span></li>
+          <li><span class="icon icon-green">🔄</span><span><strong>Mantén OpenCode actualizado</strong> – as novas versións melloran o rendemento</span></li>
+          <li><span class="icon icon-green">🔑</span><span><strong>Nunca subas as claves API</strong> ao repositorio. Usa .env e .gitignore</span></li>
+        </ul>
+      </div>
+      <div class="highlight-box green">
+        🤝 <strong>Pensa en OpenCode como un developer junior do teu equipo:</strong> dálle contexto suficiente, explícalle o que queres e revisa o seu traballo antes de facer commit.
+      </div>
+    </div>
+  </div>
+
+  <SliderFooter number="08" title="Mellores prácticas"/>
+</div>

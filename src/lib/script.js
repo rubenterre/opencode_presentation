@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
   let current = 1;
   const total = 10;
 
@@ -7,14 +8,17 @@
     current = Math.max(1, Math.min(total, current + dir));
     const next = document.getElementById('slide-' + current);
     next.classList.add('active');
-    document.getElementById('navCounter').textContent = 
+    document.getElementById('navCounter').textContent =
       String(current).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
-    document.getElementById('slideNum').textContent = 
+    document.getElementById('slideNum').textContent =
       String(current).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
     document.getElementById('progress').style.width = (current / total * 100) + '%';
     document.getElementById('btnPrev').disabled = current === 1;
     document.getElementById('btnNext').disabled = current === total;
   }
+
+  // Exponer la función globalmente para que esté disponible en onclick
+  window.changeSlide = changeSlide;
 
   document.addEventListener('keydown', function(e) {
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
@@ -29,3 +33,4 @@
 
   // Init progress
   document.getElementById('progress').style.width = (1 / total * 100) + '%';
+});

@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets"
+
+import opencodeLogo from '../../assets/slider03/opencode-wordmark-simple-dark.svg'
+import SliderFooter from "../ui/SliderFooter.astro"
+---
+
+<!-- SLIDE 3: QUE É OPENCODE -->
+<div class="slide" id="slide-3">
+  <div class="slide-header">
+    <div class="slide-label">02 · Presentación</div>
+    <div class="slide-title">Que é <span class="green">OpenCode</span>?</div>
+    <div class="divider green"></div>
+  </div>
+  <div class="slide-body">
+    <div style="flex:1.2; display:flex; flex-direction:column; gap:18px;">
+      <div class="highlight-box green">
+        <strong>OpenCode</strong> é un axente de codificación con IA de <strong>código aberto</strong> que se executa no teu terminal. Actúa como un <em>"desenvolvedor sénior"</em> que pode ler o teu proxecto, propor cambios e implementalos directamente.
+      </div>
+      <div class="card">
+        <img src={opencodeLogo.src} alt="Logo de OpenCode" class="card__img">
+        <div class="card-title green">🌟 Características principais</div>
+        <ul class="feature-list">
+          <li><span class="icon icon-green">✓</span><span><strong>100% gratuíto e código aberto</strong> – sen subscricións nin trucos ocultos</span></li>
+          <li><span class="icon icon-green">✓</span><span><strong>Agnóstico de provedor</strong> – usa Claude, GPT, Gemini ou modelos locais</span></li>
+          <li><span class="icon icon-green">✓</span><span><strong>Terminal-first</strong> – Interface TUI fermosa e rápida</span></li>
+          <li><span class="icon icon-green">✓</span><span><strong>Integración con IDEs</strong> – VS Code, Cursor e calquera editor con terminal</span></li>
+          <li><span class="icon icon-green">✓</span><span><strong>Soporte +75 provedores</strong> de modelos de IA</span></li>
+          <li><span class="icon icon-green">✓</span><span><strong>Modelos locais</strong> – execución con Ollama sen enviar código á nube</span></li>
+        </ul>
+      </div>
+    </div>
+    <div style="flex:0.8; display:flex; flex-direction:column; gap:16px;">
+      <div class="card" style="text-align:center;">
+        <div class="stat-number" style="color:var(--accent2);">130K+</div>
+        <div class="stat-label">⭐ Estrelas en GitHub</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="stat-number" style="color:var(--accent);">650K+</div>
+        <div class="stat-label">👤 Usuarios mensuais</div>
+<!--         <div class="stat-number stat-number-small" style="color:var(--accent);">828</div>
+        <div class="stat-label">👩🏻‍💻 Contribuidores</div> -->
+      </div>
+      <div class="highlight-box orange">
+        <strong>Desenvolvido polo equipo SST</strong> como alternativa open source a Claude Code, GitHub Copilot e outras ferramentas propietarias.
+      </div>
+    </div>
+  </div>
+
+   <SliderFooter number="02" title="Que é OpenCode"/>
+</div>
+
+<style>
+
+.card__img{
+  max-width: 600px;
+  padding: 1rem 0px;
+}
+
+.stat-number-small{
+  font-size: 6rem;
+  margin-top: 1rem;
+}
+
+</style>

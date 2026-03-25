@@ -1,0 +1,56 @@
+---
+import SliderFooter from "../ui/SliderFooter.astro"
+---
+<!-- SLIDE 7: COMO SE USA -->
+<div class="slide" id="slide-7">
+  <div class="slide-header">
+    <div class="slide-label">06 · Uso práctico</div>
+    <div class="slide-title">Como se <span class="accent">usa</span>?</div>
+    <div class="divider"></div>
+  </div>
+  <div class="slide-body">
+    <div style="flex:1; display:flex; flex-direction:column; gap:14px;">
+      <div class="card">
+        <div class="card-title blue">🚀 Iniciar OpenCode no teu proxecto</div>
+        <div class="code-block">
+          <span class="comment"># 1. Ir ao directorio do proxecto</span><br>
+          <span class="prompt">$ </span><span class="command">cd</span> <span class="string">~/meu-proxecto-web</span><br><br>
+          <span class="comment"># 2. Lanzar OpenCode</span><br>
+          <span class="prompt">$ </span><span class="command">opencode</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title green">💬 Exemplos de solicitudes</div>
+        <ul class="feature-list">
+          <li><span class="icon icon-green">?</span><span>"<em>Explícame como funciona o sistema de autenticación deste proxecto</em>"</span></li>
+          <li><span class="icon icon-blue">+</span><span>"<em>Engade un selector de modo escuro á páxina de configuración</em>"</span></li>
+          <li><span class="icon icon-orange">🔧</span><span>"<em>O formulario de login non envía. Aquí o erro: [pegar erro]</em>"</span></li>
+          <li><span class="icon icon-purple">↺</span><span>"<em>Refactoriza UserService para usar inxección de dependencias</em>"</span></li>
+        </ul>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:14px;">
+      <div class="card">
+        <div class="card-title orange">⌨️ Comandos esenciais</div>
+        <table class="data-table">
+          <thead>
+            <tr><th>Comando / Tecla</th><th>Función</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="kbd">Tab</span></td><td>Cambiar entre modo Plan e Build</td></tr>
+            <tr><td><span class="kbd">/undo</span></td><td>Desfacer o último cambio</td></tr>
+            <tr><td><span class="kbd">/redo</span></td><td>Rehacer un cambio desfeito</td></tr>
+            <tr><td><span class="kbd">/init</span></td><td>Crear ficheiro AGENTS.md</td></tr>
+            <tr><td><span class="kbd">@</span></td><td>Busca difusa de ficheiros</td></tr>
+            <tr><td><span class="kbd">Ctrl+Esc</span></td><td>Vista dividida no IDE</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="highlight-box orange">
+        🖼️ <strong>Soporte de imaxes:</strong> Podes arrastrar e soltar capturas de pantalla ou maquetas directamente no terminal. OpenCode analizará a imaxe e usaraa como contexto.
+      </div>
+    </div>
+  </div>
+
+  <SliderFooter number="06" title="Como se usa"/>
+</div>
